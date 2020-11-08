@@ -22,7 +22,7 @@ class sales_test(unittest.TestCase):
 
         item1 = shopping_item()
         item1.name = "The call of the wild"
-        item1.price = 12.49
+        item1.price = 12.49py
         item1.category = "books"
 
         item2 = shopping_item()
