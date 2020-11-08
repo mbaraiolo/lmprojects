@@ -4,17 +4,19 @@ import math
 def roundup_taxes (x):
     return math.ceil(x * 20) / 20
 
-# rappresent a shopping item in a shooping bag
+# 
+# this class represents a shopping item in a shopping bag
+#
 class shopping_item: 
 
     def __init__(self):
 
         self._name = None
         self._price = 0
-        self._quantity = 1
-        self._tax = 0
+        self._quantity = 1      #default quantity is 1
+        self._tax = 0          
         self._category = None
-        self._imported = False
+        self._imported = False  #default is not imported
 
     @property
     def name(self):
@@ -78,7 +80,9 @@ class shopping_item:
             raise TypeError("imported must be set to an bool")
         self._imported = a 
 
-# rappresent a shooping basket
+# 
+# this class represents a shopping basket
+#
 class shopping_basket ():
 
     def __init__(self): 
@@ -112,7 +116,9 @@ class shopping_basket ():
                     print("{0} {1} \tat {2}\t(cat: {3})".format(i.quantity, i.name, i.price, i.category))
 
 
-# rappresent a shooping receipt
+#
+# this class represents a shopping receipt
+#
 class shopping_receipt():
 
     __free_tax_categories = ['books','food','medicalproducts']
@@ -120,7 +126,7 @@ class shopping_receipt():
     def __init__(self, sb): 
 
         self._shopping_basket = sb   
-        # calculate taxes after add shooping basket
+        # calculate taxes after add shopping basket
         self.__calculate_taxes ()
 
     @property
