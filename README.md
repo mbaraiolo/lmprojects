@@ -1,4 +1,4 @@
-Exercice 1
+Exercise 1
 ==========
 
 Module **sales.py** on directory .\test_01 has 3 python classes: **shopping_item**, **shopping_basket**, **shopping_receipt** and implements the solution for the problem. This in module is devolpmented and tested with *Python 3.7.1*.
