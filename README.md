@@ -7,4 +7,4 @@ The class **shopping_basket** contains the items of shopping basket, a list of *
 
 **test_sales.py** is the unit test module with 12 testcases.
 
-For run unit test use this *python.exe .\test_01\test_sales.py*
+For run unit tests use this *python.exe .\test_01\test_sales.py*
